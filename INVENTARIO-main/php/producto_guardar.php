@@ -12,7 +12,7 @@
 	 $color=limpiar_cadena($_POST['producto_color']);
     $tamaño=limpiar_cadena($_POST['producto_tamaño']);
    $material=limpiar_cadena($_POST['producto_material']);
-    $Cantidad=limpiar_cadena($_POST['producto_cantidad']);
+    $cantidad=limpiar_cadena($_POST['producto_cantidad']);
    $fecha_ing=limpiar_cadena($_POST['fecha_de_ingreso']);
     $preciocun=limpiar_cadena($_POST['precio_compra_unidad']);
    $proveedor=limpiar_cadena($_POST['producto_proveedor']);
