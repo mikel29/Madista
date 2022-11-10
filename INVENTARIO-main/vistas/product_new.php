@@ -81,7 +81,7 @@
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
-					<label>Precio</label>
+					<label>Precio de Venta</label>
 				  	<input class="input" type="text" name="producto_precio" pattern="[0-9.]{1,25}" maxlength="25" required >
 				</div>
 		  	</div>
