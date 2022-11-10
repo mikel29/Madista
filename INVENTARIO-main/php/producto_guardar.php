@@ -4,23 +4,23 @@
 	require_once "main.php";
 
 	/*== Almacenando datos ==*/
-	$codigo=limpiar_cadena($_POST['producto_id']);
-	$nombre=limpiar_cadena($_POST['producto_nombre']);
+	  $codigo=limpiar_cadena($_POST['producto_id']);
+	 $nombre=limpiar_cadena($_POST['producto_nombre']);
     $categoria=limpiar_cadena($_POST['categoria_id']);
-	$usuario=limpiar_cadena($_POST['usuario_id']);
-	$detalle=limpiar_cadena($_POST['producto_detalle']);
-	$color=limpiar_cadena($_POST['producto_color']);
+	 $usuario=limpiar_cadena($_POST['usuario_id']);
+	  $detalle=limpiar_cadena($_POST['producto_detalle']);
+	 $color=limpiar_cadena($_POST['producto_color']);
     $tamaño=limpiar_cadena($_POST['producto_tamaño']);
-    $material=limpiar_cadena($_POST['producto_material']);
+   $material=limpiar_cadena($_POST['producto_material']);
     $Cantidad=limpiar_cadena($_POST['producto_cantidad']);
-    $fecha_ing=limpiar_cadena($_POST['fecha_de_ingreso']);
+   $fecha_ing=limpiar_cadena($_POST['fecha_de_ingreso']);
     $preciocun=limpiar_cadena($_POST['precio_compra_unidad']);
-    $proveedor=limpiar_cadena($_POST['producto_proveedor']); 
+   $proveedor=limpiar_cadena($_POST['producto_proveedor']);
     $preciov=limpiar_cadena($_POST['producto_precio']);
 
 	/*== Verificando campos obligatorios ==*/
     if($codigo=="" || $nombre=="" || $categoria=="" || $detalle=="" || $color=="" || $tamaño=="" || $material=="" || $Cantidad=="" || $fecha_ing=="" || $preciocun=="" || $proveedor=="" || $preciov=="" )
-   
+
     {
         echo '
             <div class="notification is-danger is-light">
@@ -131,7 +131,7 @@
         ';
         exit();
     }
-    
+
     if(verificar_datos("[0-9.]{1,25}",$preciocun))
     {
         echo '
@@ -308,8 +308,8 @@
         ":Proveedor"=>$proveedor,
         ":precio"=>$preciov,
         ":foto"=>$foto
-       
-        
+
+
     ];
 
     $guardar_producto->execute($marcadores);
