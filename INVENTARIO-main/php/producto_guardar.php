@@ -110,7 +110,7 @@
         exit();
     }
 
-    if(verificar_datos("[a-zA-Z0-9- ]{1,10}",$Cantidad))
+    if(verificar_datos("[0-9- ]{1,10}",$Cantidad))
     {
         echo '
             <div class="notification is-danger is-light">
