@@ -26,13 +26,13 @@
         if($check_usuario->rowCount()>0){
         	$datos=$check_usuario->fetch();
 	?>
-
+/*leroleroro */
 	<div class="form-rest mb-6 mt-6"></div>
 
 	<form action="./php/usuario_actualizar.php" method="POST" class="FormularioAjax" autocomplete="off" >
 
 		<input type="hidden" name="usuario_id" value="<?php echo $datos['usuario_id']; ?>" required >
-		
+
 		<div class="columns">
 		  	<div class="column">
 		    	<div class="control">
@@ -102,7 +102,7 @@
 			<button type="submit" class="button is-success is-rounded">Actualizar</button>
 		</p>
 	</form>
-	<?php 
+	<?php
 		}else{
 			include "./inc/error_alert.php";
 		}
